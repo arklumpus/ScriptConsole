@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:ScriptConsoleLibrary;assembly=ScriptConsoleLibrary"
+             xmlns:ic="clr-namespace:IntellisenseIcon;assembly=IntellisenseIcon"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ScriptConsoleLibrary.NamespaceStructureExpander">
+  <local:ReducedExpander Name="expander" Margin="-1,0,0,0">
+    <local:ReducedExpander.Header>
+      <StackPanel Orientation="Horizontal">
+        <ic:NamespaceIcon VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-5,-2,0,0" />
+        <local:InputTextBox FontSize="12" Grid.Row="1" Grid.Column="1" Background="{x:Null}" BorderThickness="0" FontFamily="resm:ScriptConsoleLibrary.Fonts.?assembly=ScriptConsoleLibrary#Roboto Mono" VerticalAlignment="Center" MyReadOnly="True" FontStyle="Italic" Text="Namespace"></local:InputTextBox>
+      </StackPanel>
+    </local:ReducedExpander.Header>
+  </local:ReducedExpander>
+</UserControl>

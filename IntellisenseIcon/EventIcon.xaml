@@ -1,0 +1,10 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="IntellisenseIcon.EventIcon">
+  <Canvas Width="7" Height="9" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="2">
+    <Path Fill="#c9801a" Data="M3,0 L6,0 L3,3 L7,3 L1,9 L3,5 L0,5 L3,0" />
+  </Canvas>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="24"
+             x:Class="ScriptConsoleLibrary.MyExpandable">
+  <Grid Name="mainContainer">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+    <Canvas Grid.Row="1" Width="20" Height="20" VerticalAlignment="Center" Name="expandButton" Cursor="Hand" PointerEnter="expandButton_PointerEnter" PointerLeave="expandButton_PointerLeave" PointerPressed="expandButton_PointerPressed" PointerReleased="expandButton_PointerReleased">
+      <Ellipse Width="16" Height="16" Margin="2,2,0,0" Fill="White" Stroke="Black" StrokeThickness="1" Name="expandEllipse"></Ellipse>
+
+      <Path Stroke="Black" StrokeThickness="2" Data="M7,9 L10,12 L13,9" StrokeEndLineCap="Round" StrokeStartLineCap="Round" Name="expandDownArrow"></Path>
+      <Path Stroke="Black" StrokeThickness="2" Data="M7,11 L10,8 L13,11" StrokeEndLineCap="Round" StrokeStartLineCap="Round" IsVisible="False" Name="expandUpArrow"></Path>
+    </Canvas>
+    <Grid Grid.Column="1" Name="headerContainer" Margin="5, 0, 0, 0">
+      
+    </Grid>
+  </Grid>
+</UserControl>

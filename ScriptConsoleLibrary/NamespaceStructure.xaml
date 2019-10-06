@@ -1,0 +1,27 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ScriptConsoleLibrary.NamespaceStructure">
+  <Grid Name="outputGrid">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+
+    <Canvas Grid.Row="0" Grid.ColumnSpan="2" Background="#F0F0F0"/>
+    <Canvas Grid.Row="1" Grid.Column="0" Width="20" Height="20" VerticalAlignment="Top" Name="logIcon" IsVisible="False">
+      <Path Stroke="#BBBBBB" StrokeThickness="2" Data="M10,4 L10,8 L4,8 L4,15 M10,8 L16,8 L16,15 M10,8 L10,15" StrokeJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" Margin="0,2,0,0"></Path>
+      <Ellipse Width="6" Height="6" StrokeThickness="2" Stroke="#BBBBBB" Margin="7, 1, 0, 0" Fill="White"></Ellipse>
+      <Ellipse Width="6" Height="6" StrokeThickness="2" Stroke="#BBBBBB" Margin="1, 13, 0, 0" Fill="White"></Ellipse>
+      <Ellipse Width="6" Height="6" StrokeThickness="2" Stroke="#BBBBBB" Margin="7, 13, 0, 0" Fill="White"></Ellipse>
+      <Ellipse Width="6" Height="6" StrokeThickness="2" Stroke="#BBBBBB" Margin="13, 13, 0, 0" Fill="White"></Ellipse>
+    </Canvas>
+  </Grid>
+</UserControl>

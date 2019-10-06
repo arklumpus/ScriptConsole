@@ -1,0 +1,24 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:local="clr-namespace:ScriptConsoleLibrary;assembly=ScriptConsoleLibrary"
+             x:Class="ScriptConsoleLibrary.ConsoleInputLine">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+
+    <Canvas Grid.Row="0" Grid.ColumnSpan="2" Background="#F0F0F0"/>
+    <Canvas Grid.Row="1" Width="20" Height="20" VerticalAlignment="Top">
+      <Path Stroke="#3A7FF1" StrokeThickness="2" Data="M8,6 L12,10 L8,14" StrokeEndLineCap="Round" StrokeStartLineCap="Round"></Path>
+    </Canvas>
+    <local:InputTextBox Grid.Row="1" Grid.Column="1" Background="{x:Null}" BorderThickness="0" FontFamily="resm:ScriptConsoleLibrary.Fonts.?assembly=ScriptConsoleLibrary#Roboto Mono" VerticalAlignment="Top" AcceptsReturn="True" AcceptsTab="True" Name="commandBox" Padding="0,1.5,0,0" Height="36" KeyUp="TextBox_KeyUp"></local:InputTextBox>
+  </Grid>
+</UserControl>

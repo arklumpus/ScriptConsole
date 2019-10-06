@@ -1,0 +1,28 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:ScriptConsoleLibrary;assembly=ScriptConsoleLibrary"
+             xmlns:ic="clr-namespace:IntellisenseIcon;assembly=IntellisenseIcon"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ScriptConsoleLibrary.EventStructure">
+  <Grid Height="20">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+    <StackPanel Orientation="Horizontal" >
+      <ic:EventIcon VerticalAlignment="Center" HorizontalAlignment="Center" Margin="4,0,4,0"></ic:EventIcon>
+      <Grid Width="20" IsVisible="False" Name="staticIcon" Background="White">
+        <ic:StaticIcon Margin="-1,1,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Grid>
+      <Grid Width="20" IsVisible="False" Name="notAccessibleIcon" Background="White">
+        <ic:NotAccessibleIcon HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Grid>
+    </StackPanel>
+    <StackPanel Grid.Column="1" Orientation="Horizontal" Name="methodPanel">
+      <local:InputTextBox Background="{x:Null}" BorderThickness="0" FontFamily="resm:ScriptConsoleLibrary.Fonts.?assembly=ScriptConsoleLibrary#Roboto Mono" VerticalAlignment="Top" Padding="0,1.5,0,0" Name="methodTypeBox" MyReadOnly="True" Foreground="#2B91BC" FontStyle="Italic">EventType</local:InputTextBox>
+        <local:InputTextBox Background="{x:Null}" BorderThickness="0" FontFamily="resm:ScriptConsoleLibrary.Fonts.?assembly=ScriptConsoleLibrary#Roboto Mono" VerticalAlignment="Top" Padding="0,1.5,0,0" Name="methodNameBox" MyReadOnly="True" Margin="4,0,0,0">EventName</local:InputTextBox>
+    </StackPanel>
+  </Grid>
+</UserControl>

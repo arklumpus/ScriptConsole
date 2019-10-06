@@ -1,0 +1,19 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:ScriptConsoleLibrary;assembly=ScriptConsoleLibrary"
+             xmlns:ic="clr-namespace:IntellisenseIcon;assembly=IntellisenseIcon"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ScriptConsoleLibrary.UnknownStructure">
+  <Grid Height="20">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+    <ic:UnknownIcon VerticalAlignment="Center" HorizontalAlignment="Center" Name="propertyIcon" Margin="7,3,0,0"></ic:UnknownIcon>
+    <StackPanel Grid.Column="1" Orientation="Horizontal" Name="methodPanel">
+      <local:InputTextBox Background="{x:Null}" BorderThickness="0" FontFamily="resm:ScriptConsoleLibrary.Fonts.?assembly=ScriptConsoleLibrary#Roboto Mono" VerticalAlignment="Top" Padding="0,1.5,0,0" Name="methodNameBox" MyReadOnly="True" >PropertyName</local:InputTextBox>
+    </StackPanel>
+  </Grid>
+</UserControl>

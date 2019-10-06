@@ -1,0 +1,11 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="IntellisenseIcon.StructIcon">
+  <Canvas Width="12" Height="11" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="2">
+    <Border Width="8" Height="7" BorderBrush="White" BorderThickness="1" Background="#0056a1" Margin="4,0,0,0"></Border>
+    <Border Width="8" Height="7" BorderBrush="White" BorderThickness="1" Background="#0056a1" Margin="0,4,0,0"></Border>
+  </Canvas>
+</UserControl>

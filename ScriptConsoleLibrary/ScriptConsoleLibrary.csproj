@@ -1,0 +1,174 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <ApplicationIcon></ApplicationIcon>
+    <StartupObject />
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Giorgio Bianchini</Authors>
+    <Company>University of Bristol</Company>
+    <PackageTags>C# REPL Script</PackageTags>
+    <Win32Resource />
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <Description>A library containing a control to include a C# REPL in an AvaloniaUI application. For more information, see https://github.com/arklumpus/ScriptConsole</Description>
+    <PackageProjectUrl>https://github.com/arklumpus/ScriptConsole</PackageProjectUrl>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp3.0|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp3.0|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Remove="ConsoleInputLine.xaml" />
+    <AvaloniaResource Remove="CSharpObjectStructure.xaml" />
+    <AvaloniaResource Remove="CSharpOutputLine.xaml" />
+    <AvaloniaResource Remove="ErrorLine.xaml" />
+    <AvaloniaResource Remove="EventStructure.xaml" />
+    <AvaloniaResource Remove="HistoryLine.xaml" />
+    <AvaloniaResource Remove="MethodStructure.xaml" />
+    <AvaloniaResource Remove="MyExpandable.xaml" />
+    <AvaloniaResource Remove="NamespaceStructure.xaml" />
+    <AvaloniaResource Remove="NamespaceStructureExpander.xaml" />
+    <AvaloniaResource Remove="PropertyStructure.xaml" />
+    <AvaloniaResource Remove="ReducedExpander.xaml" />
+    <AvaloniaResource Remove="ScriptConsoleControl.xaml" />
+    <AvaloniaResource Remove="TypeStructure.xaml" />
+    <AvaloniaResource Remove="UnknownStructure.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ConsoleInputLine.xaml" />
+    <None Remove="CSharpObjectStructure.xaml" />
+    <None Remove="CSharpOutputLine.xaml" />
+    <None Remove="ErrorLine.xaml" />
+    <None Remove="EventStructure.xaml" />
+    <None Remove="Fonts\RobotoMono-Regular.ttf" />
+    <None Remove="HistoryLine.xaml" />
+    <None Remove="MethodStructure.xaml" />
+    <None Remove="MyExpandable.xaml" />
+    <None Remove="NamespaceStructure.xaml" />
+    <None Remove="NamespaceStructureExpander.xaml" />
+    <None Remove="PropertyStructure.xaml" />
+    <None Remove="ReducedExpander.xaml" />
+    <None Remove="ScriptConsoleControl.xaml" />
+    <None Remove="TypeStructure.xaml" />
+    <None Remove="UnknownStructure.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.8.2" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.8.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.3.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\RobotoMono-Regular.ttf" />
+    <EmbeddedResource Include="ScriptConsoleControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CSharpObjectStructure.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReducedExpander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MethodStructure.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PropertyStructure.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TypeStructure.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EventStructure.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UnknownStructure.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NamespaceStructure.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NamespaceStructureExpander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ErrorLine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CSharpOutputLine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConsoleInputLine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HistoryLine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyExpandable.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntellisenseIcon\IntellisenseIcon.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MyExpandable.xaml.cs">
+      <DependentUpon>MyExpandable.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

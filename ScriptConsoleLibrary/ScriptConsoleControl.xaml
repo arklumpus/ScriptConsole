@@ -1,0 +1,14 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:ScriptConsoleLibrary;assembly=ScriptConsoleLibrary"
+             xmlns:ic="clr-namespace:IntellisenseIcon;assembly=IntellisenseIcon"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ScriptConsoleLibrary.ScriptConsoleControl">
+  <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Name="scroller" Background="White">
+    <StackPanel Name="consoleContainer">
+      <local:ConsoleInputLine Name="inputLine"></local:ConsoleInputLine>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

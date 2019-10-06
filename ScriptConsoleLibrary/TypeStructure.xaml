@@ -1,0 +1,41 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:local="clr-namespace:ScriptConsoleLibrary;assembly=ScriptConsoleLibrary"
+             xmlns:ic="clr-namespace:IntellisenseIcon;assembly=IntellisenseIcon"
+             x:Class="ScriptConsoleLibrary.TypeStructure">
+  <Grid Height="20">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+    <StackPanel Orientation="Horizontal" MinWidth="20">
+      <Grid Width="20" Name="classIcon" IsVisible="False" >
+        <ic:ClassIcon VerticalAlignment="Center" HorizontalAlignment="Center"></ic:ClassIcon>
+      </Grid>
+      <Grid Width="20" Name="enumIcon" IsVisible="False" >
+        <ic:EnumIcon VerticalAlignment="Center" HorizontalAlignment="Center"></ic:EnumIcon>
+      </Grid>
+      <Grid Width="20"  Name="interfaceIcon" IsVisible="False" >
+        <ic:InterfaceIcon VerticalAlignment="Center" HorizontalAlignment="Center"></ic:InterfaceIcon>
+      </Grid>
+      <Grid Width="20" Name="delegateIcon" IsVisible="False" >
+        <ic:DelegateIcon VerticalAlignment="Center" HorizontalAlignment="Center"></ic:DelegateIcon>
+      </Grid>
+      <Grid Width="20" Name="structIcon" IsVisible="False">
+        <ic:StructIcon VerticalAlignment="Center" HorizontalAlignment="Center" ></ic:StructIcon>
+      </Grid>
+      <Grid Width="20" IsVisible="False" Name="staticIcon" Background="White">
+        <ic:StaticIcon Margin="-1,-1,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Grid>
+      <Grid Width="20" IsVisible="False" Name="notAccessibleIcon" Background="White">
+        <ic:NotAccessibleIcon HorizontalAlignment="Center" VerticalAlignment="Center" />
+      </Grid>
+    </StackPanel>
+    <StackPanel Grid.Column="1" Orientation="Horizontal" Name="methodPanel">
+      <local:InputTextBox Background="{x:Null}" BorderThickness="0" FontFamily="resm:ScriptConsoleLibrary.Fonts.?assembly=ScriptConsoleLibrary#Roboto Mono" VerticalAlignment="Top" Padding="0,1.5,0,0" Name="methodTypeBox" MyReadOnly="True" Foreground="#2B91BC">PropertyType</local:InputTextBox>
+    </StackPanel>
+  </Grid>
+</UserControl>

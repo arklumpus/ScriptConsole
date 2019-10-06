@@ -1,0 +1,27 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ScriptConsoleLibrary.CSharpOutputLine">
+  <Grid Name="outputGrid">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+
+    <Canvas Grid.Row="0" Grid.ColumnSpan="2" Background="#F0F0F0"/>
+    <Canvas Grid.Row="1" Width="20" Height="20" VerticalAlignment="Top" Name="outputIcon" IsVisible="False">
+      <Path Stroke="#BBBBBB" StrokeThickness="2" Data="M11,6 L7,10 L11,14 M13,10 L13,10" StrokeEndLineCap="Round" StrokeStartLineCap="Round"></Path>
+    </Canvas>
+    <Canvas Grid.Row="1" Grid.Column="0" Width="20" Height="20" VerticalAlignment="Top" Name="logIcon" IsVisible="False">
+      <Path Stroke="#BBBBBB" StrokeThickness="2" Data="M5,15 A3,5 0 0 0 5,5 L16,5 A3,5 0 0 1 16,15 L5,15 A3,5 0 0 1 5,5" StrokeJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" Margin="0,2,0,0"></Path>
+      <Path Fill="#BBBBBB" Data="M5,12.5 A1,2 0 0 0 5,7.5 A1,2 0 0 0 5,12.5" StrokeJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" Margin="0,2,0,0"></Path>
+      <Path Stroke="#BBBBBB" Fill="White" StrokeThickness="1" Data="M10,8 L13,2 A2,1 0 0 0 17,2 L14,8 M13,2 A2,1 0 0 1 17,2" StrokeJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" Margin="0,2,0,0"></Path>
+    </Canvas>
+  </Grid>
+</UserControl>
