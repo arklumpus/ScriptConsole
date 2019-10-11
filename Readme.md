@@ -127,7 +127,7 @@ To be able to compile ScriptConsole from source, you will need to install the [.
 
 You can use [Microsoft Visual Studio](https://visualstudio.microsoft.com/it/vs/) to compile the program. The following instructions will cover compiling ScriptConsole from the command line, instead.
 
-First of all, you will need to download the ScriptConsole source code: [ScriptConsole.tar.gz](https://github.com/arklumpus/ScriptConsole/archive/v1.0.0.tar.gz) and extract it somewhere.
+First of all, you will need to download the ScriptConsole source code: [ScriptConsole.tar.gz](https://github.com/arklumpus/ScriptConsole/archive/v1.0.3.tar.gz) and extract it somewhere.
 
 ### Windows
 Open a command-line window in the folder where you have extracted the source code, and type:

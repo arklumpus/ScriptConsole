@@ -77,9 +77,11 @@ namespace ScriptConsoleLibrary
 
         private void TextBox_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.V && (e.Modifiers & InputModifiers.Control) == InputModifiers.Control)
+            if ((e.Key == Key.V && (e.Modifiers & InputModifiers.Control) == InputModifiers.Control) ||
+                (e.Key == Key.X && (e.Modifiers & InputModifiers.Control) == InputModifiers.Control) ||
+                e.Key == Key.Return || e.Key == Key.Delete || e.Key == Key.Back)
             {
-                this.FindControl<InputTextBox>("commandBox").Height = Math.Max(this.FindControl<InputTextBox>("commandBox").Height, (this.FindControl<InputTextBox>("commandBox").Text).CountOccurences("\n") * 18 + 18);
+                this.FindControl<InputTextBox>("commandBox").Height = this.FindControl<InputTextBox>("commandBox").Text.CountOccurences("\n") * 18 + 18;
                 int cInd = this.FindControl<InputTextBox>("commandBox").CaretIndex;
                 this.FindControl<InputTextBox>("commandBox").CaretIndex = 0;
                 this.FindControl<InputTextBox>("commandBox").CaretIndex = cInd;
