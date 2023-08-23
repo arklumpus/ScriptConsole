@@ -4,7 +4,7 @@ using Avalonia.Markup.Xaml;
 
 namespace IntellisenseIcon
 {
-    public class ConstIcon : UserControl
+    public partial class ConstIcon : UserControl
     {
         public ConstIcon()
         {

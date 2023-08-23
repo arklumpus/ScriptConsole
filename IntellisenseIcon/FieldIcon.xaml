@@ -5,7 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="IntellisenseIcon.FieldIcon">
   <Canvas Width="10" Height="10" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="2">
-    <Path Stroke="#0056a1" Data="M0,3 L4,5 L10,2 L6,0 L0,3" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" StrokeJoin="Bevel" StrokeThickness="1"></Path>
+    <Path Stroke="#0056a1" Data="M0,3 L4,5 L10,2 L6,0 L0,3" StrokeLineCap="Flat" StrokeJoin="Bevel" StrokeThickness="1"></Path>
     <Path Fill="#0056a1" StrokeThickness="1" Stroke="#0056a1" Data="M0,3 L4,5 L10,2 L10,7 L4,10 L0,8 L0,3"></Path>
   </Canvas>
 </UserControl>

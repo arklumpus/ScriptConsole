@@ -1,0 +1,14 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="IntellisenseIcon.KeywordIcon">
+  <Canvas Width="14" Height="12" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="2">
+    <Rectangle Width="7" Height="3" Stroke="#434343" StrokeThickness="1"></Rectangle>
+    <Path Data="M9,1.5 L14,1.5" Stroke="#434343" StrokeThickness="1"></Path>
+    <Path Data="M0,5.5 L9,5.5 M11,5.5 L13,5.5" Stroke="#434343" StrokeThickness="1"></Path>
+    <Path Data="M0,8.5 L6,8.5 M9,8.5 L14,8.5" Stroke="#434343" StrokeThickness="1"></Path>
+    <Path Data="M0,11.5 L11,11.5" Stroke="#434343" StrokeThickness="1"></Path>
+  </Canvas>
+</UserControl>

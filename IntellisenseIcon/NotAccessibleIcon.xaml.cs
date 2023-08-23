@@ -4,7 +4,7 @@ using Avalonia.Markup.Xaml;
 
 namespace IntellisenseIcon
 {
-    public class NotAccessibleIcon : UserControl
+    public partial class NotAccessibleIcon : UserControl
     {
         public NotAccessibleIcon()
         {

@@ -4,7 +4,7 @@ using Avalonia.Markup.Xaml;
 
 namespace IntellisenseIcon
 {
-    public class EventIcon : UserControl
+    public partial class EventIcon : UserControl
     {
         public EventIcon()
         {

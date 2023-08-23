@@ -7,15 +7,15 @@
     <Description>A utility package containing icons that are used in ScriptConsole. For more information see https://github.com/arklumpus/ScriptConsole</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/arklumpus/ScriptConsole</PackageProjectUrl>
-    <Version>1.0.1</Version>
+    <Version>1.2.0-a2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,52 +36,52 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="ClassIcon.xaml">
+    <AvaloniaXaml Include="ClassIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConstIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="ConstIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DelegateIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="DelegateIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EnumIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="EnumIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EventIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="EventIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FieldIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="FieldIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InterfaceIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="InterfaceIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MethodIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="MethodIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NamespaceIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="NamespaceIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NotAccessibleIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="NotAccessibleIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PropertyIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="PropertyIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StaticIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="StaticIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StructIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="StructIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UnknownIcon.xaml">
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="UnknownIcon.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
+    </AvaloniaXaml>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.8.2" />
+    <PackageReference Include="Avalonia" Version="11.0.4" />
   </ItemGroup>
 
 </Project>

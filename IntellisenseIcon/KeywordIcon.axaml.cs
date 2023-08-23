@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace IntellisenseIcon
 {
-    public partial class InterfaceIcon : UserControl
+    public partial class KeywordIcon : UserControl
     {
-        public InterfaceIcon()
+        public KeywordIcon()
         {
             this.InitializeComponent();
         }
