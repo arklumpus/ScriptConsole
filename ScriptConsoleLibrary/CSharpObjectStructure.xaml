@@ -19,7 +19,7 @@
 
     <Canvas Grid.Row="0" Grid.ColumnSpan="2" Background="#F0F0F0"/>
     <Canvas Grid.Row="1" Grid.Column="0" Width="20" Height="20" VerticalAlignment="Top" Name="logIcon" IsVisible="True">
-      <Path Stroke="#BBBBBB" StrokeThickness="2" Data="M10,4 L10,8 L4,8 L4,15 M10,8 L16,8 L16,15 M10,8 L10,15" StrokeJoin="Round" StrokeEndLineCap="Round" StrokeStartLineCap="Round" Margin="0,2,0,0"></Path>
+      <Path Stroke="#BBBBBB" StrokeThickness="2" Data="M10,4 L10,8 L4,8 L4,15 M10,8 L16,8 L16,15 M10,8 L10,15" StrokeJoin="Round" StrokeLineCap="Round" Margin="0,2,0,0"></Path>
       <Ellipse Width="6" Height="6" StrokeThickness="2" Stroke="#BBBBBB" Margin="7, 1, 0, 0" Fill="White"></Ellipse>
       <Ellipse Width="6" Height="6" StrokeThickness="2" Stroke="#BBBBBB" Margin="1, 13, 0, 0" Fill="White"></Ellipse>
       <Ellipse Width="6" Height="6" StrokeThickness="2" Stroke="#BBBBBB" Margin="7, 13, 0, 0" Fill="White"></Ellipse>

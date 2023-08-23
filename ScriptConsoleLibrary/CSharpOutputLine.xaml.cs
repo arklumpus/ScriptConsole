@@ -208,7 +208,7 @@ namespace ScriptConsoleLibrary
             }
             else if (outObj is Enum)
             {
-                StackPanel tbr = new StackPanel() { Orientation = Orientation.Horizontal };
+                StackPanel tbr = new StackPanel() { Orientation = Avalonia.Layout.Orientation.Horizontal };
                 InputTextBox bx = new InputTextBox() { Foreground = new SolidColorBrush(Color.FromRgb(0x2b, 0x91, 0xbc)), Background = null, BorderThickness = new Thickness(0), FontFamily = ScriptConsoleControl.RobotoMono, VerticalAlignment = Avalonia.Layout.VerticalAlignment.Top, MyReadOnly = true, HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Left, Padding = new Thickness(0, 1.5, 0, 0), Text = outObj.GetType().Name, FontStyle = FontStyle.Italic };
                 ToolTip.SetTip(bx, outObj.GetType().FullName);
                 tbr.Children.Add(bx);

@@ -12,8 +12,8 @@
     <Canvas Grid.Row="1" Width="20" Height="20" VerticalAlignment="Center" Name="expandButton" Cursor="Hand" PointerEnter="expandButton_PointerEnter" PointerLeave="expandButton_PointerLeave" PointerPressed="expandButton_PointerPressed" PointerReleased="expandButton_PointerReleased">
       <Ellipse Width="16" Height="16" Margin="2,2,0,0" Fill="White" Stroke="Black" StrokeThickness="1" Name="expandEllipse"></Ellipse>
 
-      <Path Stroke="Black" StrokeThickness="2" Data="M7,9 L10,12 L13,9" StrokeEndLineCap="Round" StrokeStartLineCap="Round" Name="expandDownArrow"></Path>
-      <Path Stroke="Black" StrokeThickness="2" Data="M7,11 L10,8 L13,11" StrokeEndLineCap="Round" StrokeStartLineCap="Round" IsVisible="False" Name="expandUpArrow"></Path>
+      <Path Stroke="Black" StrokeThickness="2" Data="M7,9 L10,12 L13,9" StrokeLineCap="Round" Name="expandDownArrow"></Path>
+      <Path Stroke="Black" StrokeThickness="2" Data="M7,11 L10,8 L13,11" StrokeLineCap="Round" IsVisible="False" Name="expandUpArrow"></Path>
     </Canvas>
     <Grid Grid.Column="1" Name="headerContainer" Margin="5, 0, 0, 0">
       

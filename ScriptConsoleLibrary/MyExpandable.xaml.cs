@@ -76,7 +76,7 @@ namespace ScriptConsoleLibrary
             this.FindControl<Path>("expandUpArrow").Stroke = Brushes.Black;
         }
 
-        private void expandButton_PointerPressed(object sender, PointerEventArgs e)
+        private void expandButton_PointerPressed(object sender, PointerPressedEventArgs e)
         {
             this.FindControl<Ellipse>("expandEllipse").Stroke = new SolidColorBrush(Color.FromRgb(82, 136, 226));
             this.FindControl<Path>("expandDownArrow").Stroke = new SolidColorBrush(Color.FromRgb(59, 84, 125));
@@ -84,7 +84,7 @@ namespace ScriptConsoleLibrary
             this.FindControl<Ellipse>("expandEllipse").Fill = new SolidColorBrush(Color.FromRgb(217, 236, 255));
         }
 
-        private void expandButton_PointerReleased(object sender, PointerEventArgs e)
+        private void expandButton_PointerReleased(object sender, PointerReleasedEventArgs e)
         {
             this.FindControl<Ellipse>("expandEllipse").Stroke = new SolidColorBrush(Color.FromRgb(143, 185, 255));
             this.FindControl<Path>("expandDownArrow").Stroke = new SolidColorBrush(Color.FromRgb(84, 107, 145));

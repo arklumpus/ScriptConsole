@@ -27,7 +27,7 @@ namespace ScriptConsoleLibrary
 
             InputTextBox headerBox;
 
-            StackPanel headerContainer = new StackPanel() { Orientation = Orientation.Horizontal };
+            StackPanel headerContainer = new StackPanel() { Orientation = Avalonia.Layout.Orientation.Horizontal };
             headerContainer.Children.Add(new InputTextBox() { FontSize = 12, Background = null, BorderThickness = new Thickness(0), FontFamily = ScriptConsoleControl.RobotoMono, VerticalAlignment = Avalonia.Layout.VerticalAlignment.Top, Padding = new Thickness(0, 1.5, 0, 0), MyReadOnly = true, FontStyle = Avalonia.Media.FontStyle.Italic, Text = "Structure: " });
             headerContainer.Children.Add(headerBox = new InputTextBox() { FontSize = 12, Background = null, BorderThickness = new Thickness(0), FontFamily = ScriptConsoleControl.RobotoMono, VerticalAlignment = Avalonia.Layout.VerticalAlignment.Top, Padding = new Thickness(0, 1.5, 0, 0), MyReadOnly = true, FontStyle = Avalonia.Media.FontStyle.Italic, Foreground = Brush.Parse("#2B91BC"), FontWeight = Avalonia.Media.FontWeight.Bold });
 
