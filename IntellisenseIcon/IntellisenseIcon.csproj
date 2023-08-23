@@ -7,7 +7,7 @@
     <Description>A utility package containing icons that are used in ScriptConsole. For more information see https://github.com/arklumpus/ScriptConsole</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/arklumpus/ScriptConsole</PackageProjectUrl>
-    <Version>1.2.0-a2</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
